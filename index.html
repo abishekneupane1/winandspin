@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin and Win!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Email Input Section (Visible Initially) -->
+    <div class="container" id="email-section">
+      <h1 class="title">🎉 Spin & Win! 🎉</h1>
+      <p class="subtitle">
+        Enter your email to get a spin and win exciting prizes!
+      </p>
+      <input
+        type="email"
+        id="email-input"
+        placeholder="Enter your email address..."
+        required
+      />
+      <button id="send-code-button" class="cta-button">Submit Email 🎯</button>
+      <div id="email-message"></div>
+    </div>
+
+    <!-- Verification Code Section (Hidden Initially) -->
+    <div class="container hidden" id="verification-section">
+      <h1>Verify Your Email</h1>
+      <input
+        type="text"
+        id="code-input"
+        placeholder="Enter the verification code..."
+        required
+      />
+      <button id="verify-button" class="cta-button">Verify Code ✅</button>
+      <div id="verify-message"></div>
+    </div>
+
+    <!-- Spin the Wheel Section (Hidden Initially) -->
+    <div class="container hidden" id="game-section">
+      <h1>Spin the Wheel! 🎰</h1>
+      <canvas id="wheel" width="500" height="500"></canvas>
+      <button id="spin-button" class="cta-button">Spin Now! 🎰</button>
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

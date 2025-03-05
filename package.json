@@ -1,0 +1,24 @@
+{
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase": "^11.4.0",
+    "nodemailer": "^6.10.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "spin-and-win",
+  "version": "1.0.0",
+  "main": "confetti.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
